@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// created a sturcture of three and nested them with eachother
+// created a sturcture of three and nested them with each other
 struct Recipe{
     int numOfComponents;
     string c_List;
