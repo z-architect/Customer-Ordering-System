@@ -1,0 +1,9 @@
+    ****************************** MENU LIST ***********************************
+ 
+                Daily-food                         Fast-Food    
+                **********                         *********    
+              01. Beyaynet                       06. Burger     
+              02. Shiro                          07. Pizza      
+              03. Kitfo                          08. Chicken    
+              04. Doro-wat                       09. Sandwich   
+              05. Kita-fir-fir                   10. Tacos      
