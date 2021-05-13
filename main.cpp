@@ -61,6 +61,7 @@ void showMenuList (){
 
 
 void initialize(){
+	
 	// Initializing the first menu Item
 	menuX[0].menuName = "Beyaynet";
 	menuX[0].itemCode = 1;
@@ -71,6 +72,47 @@ void initialize(){
 	menuX[0].itemRecipe.c_List[1] = " ";
 	menuX[0].itemRecipe.c_List[2] = " ";
 	menuX[0].itemRecipe.c_Measurement = "Gram";
+	
+	menuX[1].menuName = "Shiro";
+	menuX[1].itemCode = 2;
+	menuX[1].itemPrice = 45.7;
+	menuX[1].preparationTime = 35;
+	menuX[1].itemRecipe.numOfComponents = 3;
+	menuX[1].itemRecipe.c_List[0] = " ";
+	menuX[1].itemRecipe.c_List[1] = " ";
+	menuX[1].itemRecipe.c_List[2] = " ";
+	menuX[1].itemRecipe.c_Measurement = "liter";
+	
+	menuX[2].menuName = "Kitfo";
+	menuX[2].itemCode = 3;
+	menuX[2].itemPrice = 145;
+	menuX[2].preparationTime = 55;
+	menuX[2].itemRecipe.numOfComponents = 2;
+	menuX[2].itemRecipe.c_List[0] = " ";
+	menuX[2].itemRecipe.c_List[1] = " ";
+	menuX[2].itemRecipe.c_Measurement = "Gram";
+	
+	menuX[3].menuName = "Doro-wat";
+	menuX[3].itemCode = 4;
+	menuX[3].itemPrice = 125.8;
+	menuX[3].preparationTime = 60;
+	menuX[3].itemRecipe.numOfComponents = 4;
+	menuX[3].itemRecipe.c_List[0] = " ";
+	menuX[3].itemRecipe.c_List[1] = " ";
+	menuX[3].itemRecipe.c_List[2] = " ";
+	menuX[3].itemRecipe.c_List[3] = " ";
+	menuX[3].itemRecipe.c_Measurement = "liter";
+	
+	menuX[4].menuName = "Kita-fir-fir";
+	menuX[4].itemCode = 5;
+	menuX[4].itemPrice = 55.8;
+	menuX[4].preparationTime = 60;
+	menuX[4].itemRecipe.numOfComponents = 3;
+	menuX[4].itemRecipe.c_List[0] = " ";
+	menuX[4].itemRecipe.c_List[1] = " ";
+	menuX[4].itemRecipe.c_List[2] = " ";
+	menuX[4].itemRecipe.c_Measurement = "Gram ";
+	
 }
 
 
