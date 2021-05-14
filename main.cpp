@@ -24,14 +24,20 @@ struct Order{
 // prototyping a function
 void initialize();
 void showMenuList();
+int VatCalculator();
 
 
 // a global variable
 int numOfMenuItems;
 
-// a functuion to calulate the total amount of the food price including VAT %
 
-/*
+int main(){
+	showMenuList();
+
+	return 0;
+}
+
+// a function to calulate the total amount of the food price including VAT %
 int VatCalculator()
 {
 	for(int index = 0; index <5; index++)
@@ -40,7 +46,7 @@ int VatCalculator()
 		float incVat; //price including VAT
 		float itemVat; //VAT per item
 		
-		itemVat = menuX[index].itemPrice/vat;
+		itemVat = menuX[index].itemPrice/Vat;
 		
 		int totalVat = itemVat * (100 - Vat);
 		
@@ -48,15 +54,7 @@ int VatCalculator()
 		
 		return(newPrice);
 		
-		
 	}
-}
-*/
-
-int main(){
-	showMenuList();
-
-	return 0;
 }
 
 
@@ -189,13 +187,3 @@ void initialize(){
 	menuX[9].itemRecipe.c_Measurement = "Gram";
 	
 }
-
-
-
-
-
-
-
-
-
-
