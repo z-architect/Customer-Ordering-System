@@ -75,8 +75,8 @@ void initialize(){
 	
 	menuX[1].menuName = "Shiro";
 	menuX[1].itemCode = 2;
-	menuX[1].itemPrice = 45.7;
-	menuX[1].preparationTime = 35;
+	menuX[1].itemPrice = 40.7;
+	menuX[1].preparationTime = 25;
 	menuX[1].itemRecipe.numOfComponents = 3;
 	menuX[1].itemRecipe.c_List[0] = " ";
 	menuX[1].itemRecipe.c_List[1] = " ";
@@ -95,7 +95,7 @@ void initialize(){
 	menuX[3].menuName = "Doro-wat";
 	menuX[3].itemCode = 4;
 	menuX[3].itemPrice = 125.8;
-	menuX[3].preparationTime = 60;
+	menuX[3].preparationTime = 35;
 	menuX[3].itemRecipe.numOfComponents = 4;
 	menuX[3].itemRecipe.c_List[0] = " ";
 	menuX[3].itemRecipe.c_List[1] = " ";
@@ -107,11 +107,61 @@ void initialize(){
 	menuX[4].itemCode = 5;
 	menuX[4].itemPrice = 55.8;
 	menuX[4].preparationTime = 60;
-	menuX[4].itemRecipe.numOfComponents = 3;
-	menuX[4].itemRecipe.c_List[0] = " ";
-	menuX[4].itemRecipe.c_List[1] = " ";
-	menuX[4].itemRecipe.c_List[2] = " ";
+	menuX[4].itemRecipe.numOfComponents = 2;
+	menuX[4].itemRecipe.c_List[0] = "Kita";
+	menuX[4].itemRecipe.c_List[1] = "Butter";
 	menuX[4].itemRecipe.c_Measurement = "Gram ";
+	
+	menuX[5].menuName = "Burger";
+	menuX[5].itemCode = 6;
+	menuX[5].itemPrice = 85;
+	menuX[5].preparationTime = 40;
+	menuX[5].itemRecipe.numOfComponents = 4;
+	menuX[5].itemRecipe.c_List[0] = "Bread";
+	menuX[5].itemRecipe.c_List[1] = "Meat";
+	menuX[5].itemRecipe.c_List[2] = "Vegetable";
+	menuX[5].itemRecipe.c_List[3] = " ";
+	menuX[5].itemRecipe.c_Measurement = "Gram";
+	
+	menuX[6].menuName = "Pizza";
+	menuX[6].itemCode = 7;
+	menuX[6].itemPrice = 99;
+	menuX[6].preparationTime = 30;
+	menuX[6].itemRecipe.numOfComponents = 3;
+	menuX[6].itemRecipe.c_List[0] = "";
+	menuX[6].itemRecipe.c_List[1] = "";
+	menuX[6].itemRecipe.c_List[2] = "Vegetable";
+	menuX[6].itemRecipe.c_Measurement = "Gram";
+
+    menuX[7].menuName = "Chicken";
+	menuX[7].itemCode = 8;
+	menuX[7].itemPrice = 99;
+	menuX[7].preparationTime = 30;
+	menuX[7].itemRecipe.numOfComponents = 3;
+	menuX[7].itemRecipe.c_List[0] = "";
+	menuX[7].itemRecipe.c_List[1] = "";
+	menuX[7].itemRecipe.c_List[2] = "Vegetable";
+	menuX[7].itemRecipe.c_Measurement = "Gram";
+	
+	menuX[8].menuName = "Sandwich";
+	menuX[8].itemCode = 9;
+	menuX[8].itemPrice = 50.5;
+	menuX[8].preparationTime = 30;
+	menuX[8].itemRecipe.numOfComponents = 3;
+	menuX[8].itemRecipe.c_List[0] = "";
+	menuX[8].itemRecipe.c_List[1] = "";
+	menuX[8].itemRecipe.c_List[2] = "Vegetable";
+	menuX[8].itemRecipe.c_Measurement = "Gram";
+	
+ 	menuX[9].menuName = "Tacos";
+	menuX[9].itemCode = 10;
+	menuX[9].itemPrice = 99;
+	menuX[9].preparationTime = 30;
+	menuX[9].itemRecipe.numOfComponents = 3;
+	menuX[9].itemRecipe.c_List[0] = "";
+	menuX[9].itemRecipe.c_List[1] = "";
+	menuX[9].itemRecipe.c_List[2] = "Vegetable";
+	menuX[9].itemRecipe.c_Measurement = "Gram";
 	
 }
 
