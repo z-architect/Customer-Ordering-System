@@ -61,17 +61,15 @@ int VatCalculator()
 
 void showMenuList (){
 	ofstream menuList("menuTable.txt");
-	
 	menuList<<"    ****************************** MENU LIST ***********************************"<<endl;
  	menuList<<" "<<endl;
-	menuList<<"                Daily-food                         Fast-Food    "<<endl;                        
-	menuList<<"                **********                         *********    "<<endl;                       
-	menuList<<"              01. Beyaynet                       06. Burger     "<<endl;                     
-	menuList<<"              02. Shiro                          07. Pizza      "<<endl;                 
-	menuList<<"              03. Kitfo                          08. Chicken    "<<endl;                      
-	menuList<<"              04. Doro-wat                       09. Sandwich   "<<endl;                         
-	menuList<<"              05. Kita-fir-fir                   10. Tacos      "<<endl;    
-	
+    menuList<<"                Daily-food                         Fast-Food    "<<endl;                        
+    menuList<<"                **********                         *********    "<<endl;                       
+    menuList<<"              01. Beyaynet                       06. Burger     "<<endl;                     
+    menuList<<"              02. Shiro                          07. Pizza      "<<endl;                 
+    menuList<<"              03. Kitfo                          08. Chicken    "<<endl;                      
+    menuList<<"              04. Doro-wat                       09. Sandwich   "<<endl;                         
+    menuList<<"              05. Kita-fir-fir                   10. Tacos      "<<endl;                       
 	menuList.close();
 	
 	string itemLine;
@@ -158,7 +156,7 @@ void initialize(){
 	menuX[6].itemRecipe.c_List[2] = "Vegetable";
 	menuX[6].itemRecipe.c_Measurement = "Gram";
 
-	menuX[7].menuName = "Chicken";
+    menuX[7].menuName = "Chicken";
 	menuX[7].itemCode = 8;
 	menuX[7].itemPrice = 99;
 	menuX[7].preparationTime = 30;
