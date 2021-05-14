@@ -29,11 +29,36 @@ void showMenuList();
 // a global variable
 int numOfMenuItems;
 
+// a functuion to calulate the total amount of the food price including VAT %
+
+/*
+int VatCalculator()
+{
+	for(int index = 0; index <5; index++)
+	{	
+		float Vat = 115.0;
+		float incVat; //price including VAT
+		float itemVat; //VAT per item
+		
+		itemVat = menuX[index].itemPrice/vat;
+		
+		int totalVat = itemVat * (100 - Vat);
+		
+		int newPrice = menuX[index].itemPrice + totalVat;
+		
+		return(newPrice);
+		
+		
+	}
+}
+*/
+
 int main(){
 	showMenuList();
 
 	return 0;
 }
+
 
 
 void showMenuList (){
