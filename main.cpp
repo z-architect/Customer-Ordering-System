@@ -19,7 +19,7 @@ struct Menu{
 struct Order{
 	    string orderedBy;
 	    Menu menuItems[5];
-};
+}userX[3];
 
 // prototyping a function
 void initialize();
@@ -32,8 +32,38 @@ int numOfMenuItems;
 
 
 int main(){
+	string again;
+	int i=0;
+	cout<<"                          Welcome To Our Customer-Ordering-System..."<<endl;
 	showMenuList();
-
+	cout<<" "<<endl;
+	cout<<"	You Can Make Three Separate Orders, And One Order Can Have Five Items"<<endl;
+	do{
+		cout<<"Order Number "<<i+1<<endl;
+		cout<<"Write Your Name, For Your Order "<<endl;
+		cin>>userX[0].orderedBy;
+		cout<<"You Can Make Your Order By Choosing There Item Number  Eg. 01/1 for Beyaynet "<<endl;
+		for(int j=0;j<5;j++){
+			int item;
+			cout<<"Your Number "<<j+1<<" Item Is:"<<endl;
+			cin>>item;
+		}
+		
+		if(i<2){
+		    cout<<" "<<endl;
+			cout<<"Do You Want Too Order Your Next Order Again (Use Y/y For \"Yes\" and Use N/n for \"No\")"<<endl;
+			cin>>again;
+		}else{
+			  cout<<" "<<endl;
+			  cout<<"You Can't Not Order More Than 3 Orders"<<endl;
+			  cout<<"Thank You For Using Our Customer Ordering System..."<<endl;
+			  again = "n";
+		}
+		i++;
+	}while(again=="Y" || again=="y");
+	
+	
+	
 	return 0;
 }
 
@@ -61,6 +91,7 @@ int VatCalculator()
 
 void showMenuList (){
 	ofstream menuList("menuTable.txt");
+	
 	menuList<<"    ****************************** MENU LIST ***********************************"<<endl;
  	menuList<<" "<<endl;
     menuList<<"                Daily-food                         Fast-Food    "<<endl;                        
@@ -187,3 +218,9 @@ void initialize(){
 	menuX[9].itemRecipe.c_Measurement = "Gram";
 	
 }
+
+
+
+
+
+
