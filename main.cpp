@@ -32,21 +32,30 @@ int numOfMenuItems;
 
 
 int main(){
-	string again;
 	int i=0;
+	string again;
+	
+	
+	
 	cout<<"                          Welcome To Our Customer-Ordering-System..."<<endl;
-	showMenuList();
 	cout<<" "<<endl;
 	cout<<"	You Can Make Three Separate Orders, And One Order Can Have Five Items"<<endl;
 	do{
+	    int item;
+	    showMenuList();
 		cout<<"Order Number "<<i+1<<endl;
-		cout<<"Write Your Name, For Your Order "<<endl;
+		cout<<"	Write Your Name, For Your Order "<<endl;
 		cin>>userX[0].orderedBy;
-		cout<<"You Can Make Your Order By Choosing There Item Number  Eg. 01/1 for Beyaynet "<<endl;
+		cout<<" "<<endl;
+		cout<<"You Can Make Your Order By Choosing Item Number  Eg. 01/1 for Beyaynet "<<endl;
 		for(int j=0;j<5;j++){
-			int item;
 			cout<<"Your Number "<<j+1<<" Item Is:"<<endl;
-			cin>>item;
+			while(!(cin>>item && item>=1 && item<=10)){
+				cout<<" "<<endl;
+				cout<<"	Your Input Must Be A Number From 1 - 10, Only Number"<<endl;
+				cin.clear();
+				cin.ignore(100, '\n');
+			}
 		}
 		
 		if(i<2){
@@ -55,8 +64,8 @@ int main(){
 			cin>>again;
 		}else{
 			  cout<<" "<<endl;
-			  cout<<"You Can't Not Order More Than 3 Orders"<<endl;
-			  cout<<"Thank You For Using Our Customer Ordering System..."<<endl;
+			  cout<<"		You Can't Not Order More Than 3 Orders"<<endl;
+			  cout<<"	Thank You For Using Our Customer Ordering System..."<<endl;
 			  again = "n";
 		}
 		i++;
